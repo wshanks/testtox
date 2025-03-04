@@ -1,0 +1,11 @@
+[project]
+name = "testtox"
+version = "0.1.0"
+description = "Project to test building sdist and wheel with tox"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["setuptools"]
+build-backend = 'setuptools.build_meta'
