@@ -16,8 +16,12 @@ gives
 .tox/py/bin/python: No module named testtox.__main__; 'testtox' is a package and cannot be directly executed
 ```
 
-However,
+as does
 
     tox run
 
-prints `hello, tox` because it is packaging `__main__.py`.
+while
+
+    tox --override testenv.package=wheel run
+
+prints `hello, tox` because it is packaging `__main__.py` by skipping the sdist.
